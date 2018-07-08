@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    /* overflow: hidden; */
+}
+#wrap{
+    margin: 0 auto;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color: inherit;
+    display: inline-block;
+}
+img{
+    vertical-align: top;
+}
+p{
+    margin: 0;
+}
+
+
+/* 注销的样式 */
+.headnew .dw_box{
+    position: absolute;
+    right:0;
+    top:68px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 3px;
+    /* display:none; */
+}
+.dw_box .dw_img{
+    width:280px;
+    background:#18bc9c;
+    overflow:hidden;
+    padding-bottom: 10px;
+}
+.dw_box .dw_img .nav_ico{
+    display:block;
+    height: 90px;
+    width: 90px;
+    border: 3px solid;
+    border-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+    border-radius:50%;
+    overflow:hidden;
+    margin:20px 0 10px 91px;
+}
+.dw_box .dw_img .nav_ico img{
+    width:100%;
+}
+.dw_box .dw_img p{
+    color:#fff;
+    text-align:center;
+    font-size:12px;
+   line-height:20px;
+}
+.dw_box .close_box{
+    background:#f9f9f9;
+    overflow:hidden;
+}
+.dw_box .close_box a{
+    display:block;
+    width:65px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    color:#fff;
+    background:#e74c3c;
+    font-size:12px;
+    margin:10px 107px;
+}

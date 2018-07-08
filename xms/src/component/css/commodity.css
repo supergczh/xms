@@ -1,0 +1,545 @@
+.content {
+  background: #e8edf0;
+}
+body .content input:focus{
+    border: 1px solid #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+    border-radius: 4px;
+}
+body .content input{
+    border-radius: 4px;
+}
+.content .breadcrumb { 
+  /* padding-top: 10px; */
+  width: 100%;
+  height: 40px;
+  /* background: rgba(243, 243, 243, 1); */
+  font: 13px/40px '微软雅黑';
+}
+.content .breadcrumb a {
+  padding: 0 20px;
+}
+.content .breadcrumb i {
+  padding: 0 20px;
+  display: inline;
+  font: 13px/50px '微软雅黑';
+  text-decoration: none;
+  color: inherit;
+}
+.content .breadcrumb span {
+  padding: 0 12px;
+  display: inline-block;
+  color: #00AEFF;
+  /* border-bottom: 2px solid #00AEFF; */
+}
+.content .breadcrumb #bread_r {
+  float: right;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /* color: #fff; */
+}
+.content .breadcrumb #bread_r .add {
+  cursor: pointer;
+  width: 38%;
+  height: 27px;
+  padding: 5px 5px;
+  background: #ffb752!important;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+.content .breadcrumb #bread_r .add a {
+  cursor: pointer;
+  width: 100%;
+  padding: 0;
+}
+
+.content .breadcrumb #bread_r .remove {
+  cursor: pointer;
+  width: 38%;
+  height: 27px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  background: #d15b47!important;
+  margin: 0 5px;
+}
+.content .breadcrumb #bread_r .remove2{
+   cursor: pointer;
+  width: 38%;
+  height: 27px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  background: #d15b47!important;
+
+  margin-left: 20px;
+}
+.content .breadcrumb #bread_r i {
+  
+  display: inline;
+  vertical-align: top;
+  padding: 0;
+  cursor: pointer;
+  font: 12px/27px '微软雅黑';
+}
+.content .breadcrumb #bread_r .add:hover {
+  background: #e59729!important;
+}
+.content .breadcrumb #bread_r .remove:hover {
+  background: #b74635!important ;
+}
+.content .breadcrumb .remove4 {
+  width: 38%;
+  height: 27px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  background: #1abc9c;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.content .breadcrumb .remove4:hover {
+ 
+  background: #0ca586;
+
+}
+.search {
+  padding-top: 3px;
+  height: 10px;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.918); */
+  /* background: #fff; */
+}
+.comsearch .comsearch_h {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /* background: #fff; */
+  padding-bottom: 12px;
+  padding-top: 3px;
+}
+.comsearch .comsearch_h ul {
+  width: 90%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  /* background: #fff; */
+  vertical-align: top;
+}
+.comsearch .comsearch_h ul li {
+  width: 17%;
+  margin-right: 2%;
+}
+.comsearch .comsearch_h ul li select {
+  margin-right: 9px;
+  width: 100%;
+  height: 31px;
+  outline: none;
+  border: 1px solid #ddd;
+  color: #858585;
+  text-indent: 10px;
+}
+.comsearch .comsearch_h ul li #set {
+  vertical-align: top;
+  width: 100px;
+}
+.comsearch .comsearch_h ul #sch {
+  width: 34%;
+  height: 31px;
+  overflow: hidden;
+  vertical-align: top;
+}
+.comsearch .comsearch_h ul #sch #searchs {
+  width: 70%;
+  display: inline-block;
+  height: 29px;
+  text-indent: 10px;
+  padding: 0;
+}
+#seah{
+  width: 45px;
+  height: 31px;
+}
+ #search-btn {
+    width: 45px;
+    height: 31px;
+    border: 0;
+    line-height: 23px;
+    display: inline-block;
+    padding: 0;
+    font-style: inherit;
+    outline: none;
+    background: #18bc9c;
+    color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.comsearch .comsearch_h ul #sch #searchs-btn {
+  vertical-align: top;
+  width: 20%;
+  height: 31px;
+  border: 0;
+  line-height: 26px;
+  display: inline-block;
+  padding: 0;
+  margin-left: 10px;
+  font-style: inherit;
+  outline: none;
+  color: #fff;
+  background: #18bc9c;
+  cursor: pointer;
+}
+.comsearch #tab {
+  width: 100%;
+}
+.comsearch h1 {
+  margin: 0;
+  overflow: hidden;
+}
+.comsearch span {
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #bbb;
+}
+.comsearch input {
+  outline: none;
+  display: none;
+}
+.comsearch input:checked ~ span {
+  background: #1abc9c url("../images/dui.png") no-repeat;
+  background-size: 12px 12px;
+  border: 1px solid #00AEFF;
+}
+.comsearch table {
+  border-collapse: collapse;
+  border: #bbb;
+}
+.comsearch body {
+  width: 100%;
+  height: 100%;
+}
+.comsearch .tBody {
+  height: 430px;
+  /* overflow-X: hidden; */
+  /* overflow-Y: scroll; */
+  background: #fff;
+  color: #575a5f;
+  border: 0;
+}
+.tBody tr:nth-child(2n+1){
+    background:#f9f9f9;
+}
+.comsearch .title {
+  text-align: center;
+  color: #fca113;
+  text-shadow: 0 0 2px #fcf913;
+  line-height: 50px;
+}
+.comsearch table {
+  border: 0;
+  border-color: transparent;
+}
+.comsearch th {
+  /* padding: 0 10px; */
+  font-size: 14px;
+  line-height: 30px;
+  border:1px solid #ddd;
+  /* border: 0; */
+  background: #fff;
+}
+.comsearch tr {
+  height: 40px;
+  background: #fff;
+}
+.comsearch tr:hover{
+ background: #f9f9f9;
+}
+.comsearch ul {
+  padding: 5px 0;
+  /* width: 90%; */
+  text-align: center;
+}
+.comsearch #page-container #pag{
+    /* width: 60%; */
+    float: right;
+}
+.comsearch #page-container #pag a{
+    /* width: 60%; */
+    float: left;
+    padding: 0 3px;
+}
+.comsearch td {
+  font-size: 14px;
+  height: 38px;
+  border: 1px solid #f5f5f5;
+  text-align: center;
+}
+.comsearch td img {
+  color: #666;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.comsearch td .icon-bianji-copy {
+  line-height: 20px;
+  font-size: 20px;
+  color: #fff;
+  background: #1abc9c;
+}
+.comsearch td .icon-shanchu2 {
+  line-height: 20px;
+  font-size: 20px;
+  color: #fff;
+  background: #f04844;
+}
+
+.comsearch td .iconfont .icon-chakan {
+font-size: 20px;
+  color: #00a854;
+}
+.comsearch td .icon-bianji{
+font-size: 18px;
+  color: #06c
+}
+.comsearch td .icon-shezhi{
+font-size: 16px;
+  color: #06c
+}
+.comsearch td .icon-shanchu3{
+  font-size: 18px;
+color: #f33;
+}
+.comsearch td .icon-chaxun {
+  line-height: 20px;
+  font-size: 20px;
+  color: #fff;
+  background: #07e1f1;
+}
+.comsearch td .active {
+  color: #1abc9c;
+  font-size: 35px;
+  background: #fff;
+}
+.comsearch td i {
+  font-style: inherit;
+  color: rgba(17, 172, 17, 0.822);
+  cursor: pointer;
+  margin: 0 4px;
+}
+.comsearch .is {
+  color: #666;
+}
+.comsearch td input {
+  margin: 0 2px;
+}
+.comsearch label {
+  display: inline-block;
+}
+.comsearch input[type="text"] {
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 20px;
+}
+.comsearch .active {
+  background-color: #f7cb75;
+}
+.comsearch #page {
+  height: 40px;
+  font: 14px/23px '微软雅黑';
+}
+.comsearch #page .pag {
+  color: #575a5f;
+  height: 100%;
+  float: right;
+  font: 14px/20px '微软雅黑';
+  vertical-align: top;
+  display: flex;
+  align-items: center;
+}
+.main-container .comsearch #page .pages  {
+  font: 14px/23px '微软雅黑';
+  width: 44px;
+  height: 23px;
+  background: #f1edede3;
+  text-align: center;
+  border: 1px solid #f1eded;
+  padding: 0 3px;
+  cursor: pointer;
+  margin: 0  6px;
+}
+.comsearch #page .pag a {
+ width: 23px;
+  height: 23px;
+  font: 12px/23px '微软雅黑';
+  background: #f1edede3;
+  text-align: center;
+  border: 1px solid #f1eded;
+  cursor: pointer;
+  margin-right: 6px;
+}
+.comsearch #page .pag i {
+  width: 23px;
+  height: 23px;
+  font: 12px/23px '微软雅黑';
+  margin: 0 6px;
+  cursor: pointer;
+  background: #1abc9c;
+  color: #fff;
+  text-align: center;
+}
+
+.comsearch #page .pag span {
+  width: 23px;
+  height: 23px;
+  font: 12px/23px '微软雅黑';
+  background: #f1edede3;
+  text-align: center;
+  border: 1px solid #f1eded;
+  cursor: pointer;
+   margin: 0 6px;
+}
+
+.comsearch #page .pag span:hover{
+  /* width: 23px; */
+  height: 23px;
+  font: 12px/23px '微软雅黑';
+  background: #f1edede3;
+  text-align: center;
+  border: 1px solid #f1eded;
+  cursor: pointer;
+  margin-right: 6px;
+  color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+.comsearch #page .pag .count{
+  margin-left: 4px;
+}
+.comsearch #page .pag .active {
+  width: 23px;
+  height: 23px;
+  font: 12px/23px '微软雅黑';
+  margin: 0 6px;
+  cursor: pointer;
+  background: #1abc9c;
+  color: #fff;
+  text-align: center;
+}
+.comsearch #page .pag input {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  padding: 0;
+  background: #f1edede3;
+  text-align: center;
+  border: 1px solid #f1eded;
+  margin: 0  6px;
+}
+.comsearch #page .pag button {
+  color: #575a5f;
+  cursor: pointer;
+  margin-left: 6px;
+}
+#fw{
+  display: none;
+}
+
+.comsearch .bj{
+
+}
+.removesure{
+      cursor: pointer;
+      display: none;
+  width: 38%;
+  height: 27px;
+  padding: 5px 5px;
+  background: #1abc9c!important;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+.content .breadcrumb #bread_r .removesure:hover {
+  background: #138b73!important ;
+}
+
+.tishi{
+  display: none;
+}
+.tishi1 span{
+  margin-right: 15px;
+}
+.tishi2 span{
+  margin-right: 15px;
+}
+.tishi1 i{
+  font-size: 18px;
+  line-height: 40px;
+  margin-left: 15px;
+  color: #2c2;
+  margin-right: 10px;
+}
+.tishi1{
+  /* width: 130px; */
+  height: 40px;
+  position: absolute;
+  top:100px;
+  background: #fff;
+  left:50%;
+  border-radius: 7px;
+  border: 1px solid #f1eded;
+  /* display: none; */
+  color: rgba(0,0,0,.65);
+  font-size: 15px;
+-webkit-animation:fadeInDownBig 1s .2s ease both;
+-moz-animation:fadeInDownBig 1s .2s ease both;}
+
+@-webkit-keyframes fadeInDownBig{
+0%{opacity:0;
+-webkit-transform:translateY(-2000px)}
+100%{opacity:1;
+-webkit-transform:translateY(0)}
+}
+@-moz-keyframes fadeInDownBig{
+0%{opacity:0;
+-moz-transform:translateY(-2000px)}
+100%{opacity:1;
+-moz-transform:translateY(0)}
+}
+
+.tishi2 i{
+  font-size: 18px;
+  line-height: 40px;
+  margin-left: 15px;
+  color: #2c2;
+  margin-right: 10px;
+}
+.tishi2{
+  /* width: 130px; */
+  height: 40px;
+  position: absolute;
+  top:100px;
+  background: #fff;
+  left:50%;
+  border-radius: 7px;
+  border: 1px solid #f1eded;
+  /* display: none; */
+  color: rgba(0,0,0,.65);
+  font-size: 15px;
+-webkit-animation:fadeOutUpBig 1s .2s ease both;
+-moz-animation:fadeOutUpBig 1s .2s ease both;}
+@-webkit-keyframes fadeOutUpBig{
+0%{opacity:1;
+-webkit-transform:translateY(0)}
+100%{opacity:0;
+-webkit-transform:translateY(-2000px)}
+}
+@-moz-keyframes fadeOutUpBig{
+0%{opacity:1;
+-moz-transform:translateY(0)}
+100%{opacity:0;
+-moz-transform:translateY(-2000px)}
+}
