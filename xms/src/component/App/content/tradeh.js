@@ -24,35 +24,39 @@ class TradeH extends React.Component {
             //弹窗数据
         };
     }
-
+componentDidMount(){
+    let { gettrade}=this.props
+    gettrade(0)
+}
 
     click=(ev)=>{
+        let { gettrade } = this.props
             if(ev=='昨天'){
                 this.refs.r1.className='active'
                 this.refs.r2.className= this.refs.r3.className = ''
+                gettrade(0)
             }else if(ev=='最近7天'){
                 this.refs.r2.className = 'active'
                 this.refs.r1.className = this.refs.r3.className = ''
+                gettrade(1)
             }else if(ev=='最近30天'){
                 this.refs.r3.className = 'active'
                 this.refs.r2.className = this.refs.r1.className = ''
+                gettrade(2)
             }
     }
     render() {
 
         let { data, data1 } = this.props
-
+        console.log(data);
+        
         let { error, isLoaded, nowpage, pagecontent, onOff, e } = this.state
         let { number, Name, Stock, article, Price } = this.state
-        if (isLoaded != data1) {
-            isLoaded = true
-        } else {
-            isLoaded = false
-        }
+      
         // let count = Math.ceil(data1.length / pagecontent)
 
         //判断全选开关
-        if (isLoaded != data1) {
+        if (isLoaded != data) {
             isLoaded = true
         } else {
             isLoaded = false
@@ -132,12 +136,12 @@ class TradeH extends React.Component {
                                         </thead>
                                         <tbody id="tb">
                                             <tr>
-                                                <td>1888</td>
-                                                <td>80</td>
-                                                <td>144</td>
-                                                <td>643</td>
-                                                <td>130</td>
-                                                <td><i className="is">￥</i>1905871.71</td>
+                                                <td>{data[0].ll}</td>
+                                                <td>{data[0].xd}</td>
+                                                <td>{data[0].dd}</td>
+                                                <td>{data[0].xydd}</td>
+                                                <td>{data[0].xdje}</td>
+                                                <td><i className="is">￥</i>{data[0].tkje}</td>
                                             </tr>
                                         </tbody>
                                         <thead>
@@ -152,12 +156,12 @@ class TradeH extends React.Component {
                                         </thead>
                                         <tbody id="tb">
                                             <tr>
-                                                <td><i className="is">￥</i>1046.01</td>
-                                                <td>55</td>
-                                                <td>81</td>
-                                                <td>381</td>
-                                                <td><i className="is">￥</i>1967849.99</td>
-                                                <td><i className="is">￥</i>24294.44</td>
+                                                <td><i className="is">￥</i>{data[0].tkje}</td>
+                                                <td>{data[0].fkrs}</td>
+                                                <td>{data[0].fkdd}</td>
+                                                <td>{data[0].fkjs}</td>
+                                                <td><i className="is">￥</i>{data[0].fkje}</td>
+                                                <td><i className="is">￥</i>{data[0].kdj}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -181,7 +185,7 @@ class TradeH extends React.Component {
 export default connect((state) => {
 
     return {
-        data: state.reducer8,
+        data: state.reducer6.content,
     };
 }, (dispatch) => bindActionCreators(actionCreators, dispatch))(TradeH)
 // export default TradeH;

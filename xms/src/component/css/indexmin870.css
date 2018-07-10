@@ -15,11 +15,19 @@
   background: #13161c;
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: 2px;
-  font: 28px/68px '微软雅黑';
+  font: 45px/68px '微软雅黑';
 }
 .sidebar #oUl {
   list-style: none;
   font-weight: bold;
+}
+.icon-touxiang-kong{
+  color: rgba(204, 198, 198, 0.815);
+  font-size: 125px;
+  margin-left:124px;
+}
+.cds{
+  margin-left: 96px;
 }
 .sidebar #oUl  #dli2 {
   
@@ -87,9 +95,7 @@
   
   background: #1e282c;
 } */
-.sidebar #oUl li .dds{
-  height: 40px;
-}
+
 .sidebar #oUl li .dli {
  width: 170px;
   padding: 0 0 0 20px;
@@ -157,6 +163,7 @@ display: block;
  display: block;
  color: #fff;
 }
+
 .sidebar #oUl li .down li span {
   display: inline-block;
   margin-left: 58px;
@@ -177,12 +184,14 @@ display: block;
   background: #27b6af;
   color: #fff;
 }
+.sidebar #oUl li .dds{
+  height: 40px;
+}
 .main-container .sidebar #oUl li .dli #home {
   font-size: 20px;
 }
 .content {
-  /* overflow: hidden;
-   */
+  /* overflow: hidden; */
   margin-left: 190px;
   background: #f0f2f5;
 }
@@ -192,7 +201,7 @@ display: block;
   background: #30373e;
 }
 .content .cont .cont-r {
-  width: 44%;
+  width: 20%;
   height: 100%;
   float: right;
   /* overflow: hidden; */
@@ -208,7 +217,7 @@ display: block;
 .content .cont .cont-r .xiaoxigonggao .notify {
   position: absolute;
   bottom: 50%;
-  right: 43%;
+  right: 39%;
 }
 .content .cont .cont-r .xiaoxigonggao .notify .heartbit {
   position: absolute;
@@ -255,7 +264,7 @@ display: block;
 .content .cont .cont-r .xinfeng .notify {
   position: absolute;
   bottom: 53%;
-  right: 37%;
+  right: 29%;
 }
 .content .cont .cont-r .xinfeng .notify .heartbit {
   position: absolute;
@@ -304,27 +313,23 @@ display: block;
   font-size: 21px;
 }
 .content .cont .cont-r #user {
-  position: relative;
+ 
   width: 40%;
   height: 100%;
   margin-left: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
 .content .cont .cont-r #user .user-icon {
   cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url(./user.png) -1px no-repeat;
+  /* background: url(./user.png) -1px no-repeat; */
   background-size: 44px 44px;
-}
-.content .cont .cont-r #user .logout{
-    cursor: pointer;
-    width: 40px;
-    height: 100px;
-    background: #666;
 }
 .content .cont .cont-r #user .user-icon .icon-touxiang-kong {
       margin: 0;
@@ -332,13 +337,95 @@ display: block;
       line-height: 40px;
       color: #f0f2f5;
 }
-.icon-touxiang-kong{
-  color: rgba(204, 198, 198, 0.815);
-  font-size: 125px;
-  margin-left:124px;
+#down2{
+  width: 200px;
+  height: 105px;
+  right: 0;
+  top:68px;
+      border-radius: 4px;
+  font: 14px/35px '微软雅黑';
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  position: absolute ;
+  background: #f0f2f5;
+  display: none;
 }
-.cds{
-  margin-left: 96px;
+#down2 .cd{
+  height: 35px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
+}
+#down2 .cd3{
+  height: 35px;
+/* cursor: pointer; */
+}
+#down2 .cd2{
+  height: 35px;
+cursor: pointer;
+}
+/* #down2 .cd:hover{
+  height: 35px;
+cursor: pointer;
+background: #e6f7ff;
+} */
+#down2 .cd2:hover{
+  height: 35px;
+cursor: pointer;
+background: #e6f7ff;
+}
+.content .contents {
+  /* overflow: hidden; */
+  /* padding: 14px 10px 14px; */
+}
+.content .contents .overview .income {
+  cursor: pointer;
+  height: 100px;
+  width: 22%;
+  float: left;
+  margin: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #00a5a8 0%, #76e3ed 100%);
+}
+.content .contents .overview .income:nth-child(2) {
+  background: linear-gradient(to right, #f43f5d 2%, #f2686a 100%);
+}
+.content .contents .overview .income:nth-child(3) {
+  background: linear-gradient(to right, #d1d337 0%, #ede8a8 100%);
+}
+.content .contents .overview .income:nth-child(4) {
+  background: linear-gradient(to right, #10c888 1%, #85c6af 100%);
+}
+.content .contents .overview .inc {
+  width: 70%;
+  height: 80px;
+}
+.content .contents .overview .inc span {
+  float: left;
+  font-size: 37px;
+  line-height: 80px;
+  color: #fff;
+  display: inline-block;
+}
+.content .contents .overview .inc .total {
+  text-align: center;
+  height: 80px;
+  overflow: hidden;
+  float: right;
+  color: #fff;
+}
+.content .contents .overview .inc p {
+  font: 24px/47px "微软雅黑";
+}
+.content .contents .overview .inc i {
+  display: inline-block;
+  font: 14px/16px "微软雅黑";
+}
+.content #main {
+  margin: 0 auto;
+  width: 90%;
+  height: 350px;
 }
 @-moz-keyframes heartbit {
   0% {
@@ -406,59 +493,28 @@ display: block;
     opacity: 0;
   }
 }
-.content .contents {
-  /* overflow: hidden; */
-  padding: 14px 10px 14px;
-}
-.content .contents .overview .income {
+.content .cont .cont-r #user:hover {
+  background: #27b6af;
+  color: #fff;
   cursor: pointer;
-  height: 100px;
-  display: block;
-  float: left;
-  width: 46%;
-  margin: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #00a5a8 0%, #76e3ed 100%);
 }
-.content .contents .overview .income:nth-child(2) {
-  background: linear-gradient(to right, #f43f5d 2%, #f2686a 100%);
-}
-.content .contents .overview .income:nth-child(3) {
-  background: linear-gradient(to right, #d1d337 0%, #ede8a8 100%);
-}
-.content .contents .overview .income:nth-child(4) {
-  background: linear-gradient(to right, #10c888 1%, #85c6af 100%);
-}
-.content .contents .overview .inc {
-  width: 70%;
-  height: 80px;
-  margin: 0 auto;
-}
-.content .contents .overview .inc span {
-  float: left;
-  font-size: 37px;
-  line-height: 80px;
+.content .cont .cont-r .xinfeng:hover {
+  background: #27b6af;
   color: #fff;
-  display: inline-block;
+  cursor: pointer;
 }
-.content .contents .overview .inc .total {
-  text-align: center;
-  height: 80px;
-  overflow: hidden;
-  float: right;
+.content .cont .cont-r .xiaoxigonggao:hover {
+  background: #27b6af;
   color: #fff;
+  cursor: pointer;
 }
-.content .contents .overview .inc p {
-  font: 24px/47px "微软雅黑";
+.content .cont .cont-r .xiaoxigonggao:hover .icon-xiaoxigonggao{
+  /* background: #27b6af; */
+  color: #fff;
+  /* cursor: pointer; */
 }
-.content .contents .overview .inc i {
-  display: inline-block;
-  font: 14px/16px "微软雅黑";
-}
-.content #main {
-  margin: 0 auto;
-  width: 80%;
-  height: 350px;
+.content .cont .cont-r .xinfeng:hover .icon-icon-p_xinfeng{
+  /* background: #27b6af; */
+  color: #fff;
+  /* cursor: pointer; */
 }

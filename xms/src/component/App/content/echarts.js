@@ -37,7 +37,7 @@ class EchartsMap extends Component {
         // 绘制图表
         myChart.setOption({
             title: {
-                text: '各系列销售情况'
+                text: '销售情况'
             },
             tooltip: {
                 trigger: 'axis',
@@ -46,7 +46,7 @@ class EchartsMap extends Component {
                 }*/
             },
             legend: {
-                data: ['A系列', 'B系列', 'C系列', 'D系列']
+                data: ['A系列男装', 'B系列男装', 'C系列女装', 'D系列女装']
             },
             toolbox: {
                 show: true,

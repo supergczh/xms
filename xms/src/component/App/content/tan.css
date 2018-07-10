@@ -231,7 +231,7 @@ width:100%;
     margin-left:90px;
 }
 .center_box .login_btn{
-    width: 88%;
+    width: 91%;
 }
 .tan_box2{
    width:700px;
@@ -248,4 +248,13 @@ width:100%;
 }
 .input_info input:focus{
     border: 1px solid #40a9ff;
+}
+.input_info .tis{
+    display: inline-block;
+    
+}
+.input_info .tis span{
+    margin-left: 10px;
+    display: none;
+    color: red;
 }

@@ -177,8 +177,8 @@ class UserK extends React.Component {
             <div>
                 <div ref='thblock' >{ar}</div>
                 <div ref='th' id='fw'>
-                    <div class="breadcrumb breadcrumb2">
-                        <div class="user">用户详情</div>
+                    <div className="breadcrumb breadcrumb2">
+                        <div className="user">用户详情</div>
                         <div id="bread_r">
                             <div className="remove4">
                                 <a id="remove3"
@@ -187,62 +187,64 @@ class UserK extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div class="search search2"></div>
-                    <div class="user-t">
-                        <div class="u-l">
-                            <p class="p1">
-                                <img class="iconfont icon-morentouxiang" src="" alt="" />
+                    <div className="search search2"></div>
+                    <div className="user-t">
+                        <div className="u-l">
+                            <p className="p1">
+                                <img className="iconfont icon-morentouxiang" src="" alt="" />
                             </p>
                             <p>18000000000</p>
                             <p>
                                 <span>黄金会员</span>
                             </p>
                         </div>
-                        <div class="u-lef">
-                            <div class="info">用户ID</div>
-                            <div class="info">昵称</div>
-                            <div class="info">性别</div>
-                            <div class="info">生日</div>
-                            <div class="info none">城市</div>
+                        <div className="u-lef">
+                            <div className="info">用户ID</div>
+                            <div className="info">昵称</div>
+                            <div className="info">性别</div>
+                            <div className="info">生日</div>
+                            <div className="info none">城市</div>
                         </div>
-                        <div class="u-r">
-                            <div class="info2">8447466</div>
-                            <div class="info2">Windir</div>
-                            <div class="info2">男</div>
-                            <div class="info2">1984年6月22日</div>
-                            <div class="info2 none">广东省深圳市</div>
+                        <div className="u-r">
+                            <div className="info2">8447466</div>
+                            <div className="info2">Windir</div>
+                            <div className="info2">男</div>
+                            <div className="info2">1984年6月22日</div>
+                            <div className="info2 none">广东省深圳市</div>
                         </div>
-                        <div class="u-lef">
-                            <div class="info">职业</div>
-                            <div class="info">个性签名</div>
-                            <div class="info">喜欢的分类</div>
-                            <div class="info">注册时间</div>
-                            <div class="info none">用户来源</div>
+                        <div className="u-lef">
+                            <div className="info">职业</div>
+                            <div className="info">个性签名</div>
+                            <div className="info">喜欢的分类</div>
+                            <div className="info">注册时间</div>
+                            <div className="info none">用户来源</div>
                         </div>
-                        <div class="u-r  u-none">
-                            <div class="info2">学生</div>
-                            <div class="info2">无</div>
-                            <div class="info2">服装、餐厨</div>
-                            <div class="info2">2017-07-24 17:25:38</div>
-                            <div class="info2 none">PC端</div>
+                        <div className="u-r  u-none">
+                            <div className="info2">学生</div>
+                            <div className="info2">无</div>
+                            <div className="info2">服装、餐厨</div>
+                            <div className="info2">2017-07-24 17:25:38</div>
+                            <div className="info2 none">PC端</div>
                         </div>
                     </div>
 
-                    <div class="jb">
-                        <div class="j-t">
-                            <div class="f-img j-img">
-                                <img src="" alt="" class="iconfont icon-shuqian" />
+                    <div className="jb">
+                        <div className="j-t">
+                            <div className="f-img j-img">
+                                <img src="" alt="" className="iconfont icon-shuqian" />
                                 <span>统计信息</span>
                             </div>
-                            <div class="comsearch comsearch_t comsearch_t2">
-                                <section class="tBody tbody" id="tb">
+                            <div className="comsearch comsearch_t comsearch_t2">
+                                <section className="tBody tbody" id="tb">
                                     <table id="tab" width="600" align="center" border="1">
                                         <thead>
+                                            <tr>
                                             <th index="id">消费金额</th>
                                             <th>订单数量</th>
                                             <th index="price">退货记录</th>
                                             <th>联系方式</th>
                                             <th>收货地址</th>
+                                            </tr>
                                         </thead>
                                         <tbody id="tb">
                                             <tr>
@@ -260,16 +262,17 @@ class UserK extends React.Component {
                     </div>
 
 
-                    <div class="jb">
-                        <div class="j-t">
-                            <div class="f-img j-img">
-                                <img src="" alt="" class="iconfont icon-shuqian" />
+                    <div className="jb">
+                        <div className="j-t">
+                            <div className="f-img j-img">
+                                <img src="" alt="" className="iconfont icon-shuqian" />
                                 <span>订单记录</span>
                             </div>
-                            <div class="comsearch comsearch_t comsearch_t2">
-                                <section class="tBody tbody" id="td">
+                            <div className="comsearch comsearch_t comsearch_t2">
+                                <section className="tBody tbody" id="td">
                                     <table id="tab" width="600" align="center" border="1">
                                         <thead>
+                                            <tr>
                                             <th index="id">订单编号</th>
                                             <th>提交时间</th>
                                             <th index="price">用户账号</th>
@@ -278,6 +281,7 @@ class UserK extends React.Component {
                                             <th>订单来源</th>
                                             <th>订单状态</th>
                                             <th>操作</th>
+                                            </tr>
                                         </thead>
                                         <tbody id="tb">
                                             <tr>

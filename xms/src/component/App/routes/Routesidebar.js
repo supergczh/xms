@@ -112,7 +112,6 @@ let routes = [
         render: ({ match }) => {
             let a = cookie.load('key', true)
             let b = a.split('r')
-            console.log(b);
             
             if (b[1] === '1') {
                 let id = '1';

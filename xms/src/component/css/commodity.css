@@ -50,6 +50,10 @@ body .content input{
   border-radius: 4px;
   margin: 0 5px;
 }
+.content .breadcrumb #bread_r .active {
+  
+  background: #27b6af!important;
+}
 .content .breadcrumb #bread_r .add a {
   cursor: pointer;
   width: 100%;

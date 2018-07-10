@@ -83,7 +83,7 @@ class Pass extends React.Component {
                     that.refs.tishi.className = 'tishi1'
                      setTimeout(function(){
                          that.refs.tishi.className='tishi2'
-                     },3000)
+                     },2000)
                    
                 }
                 else{

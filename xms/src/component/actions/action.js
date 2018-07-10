@@ -8,7 +8,7 @@ const ORDER = 'ORDER'
 const ADDORDERA = 'ADDORDERA'
 const RETURN = 'RETURN'
 const RETURNGET = 'RETURNGET'
-const TRADE = 'TRADE'
+// const TRADE = 'TRADE'
 const PAGE = 'PAGE'
 const ODERPAGE = 'ODERPAGE'
 const RETURNPAGE = 'RETURNPAGE'
@@ -34,6 +34,14 @@ const USERCOUNT = 'USERCOUNT'
 const ADMIN = 'ADMIN'
 const ADMINPG = 'ADMINPG'
 const FINDUSE ='FINDUSE'
+const TRADE = 'TRADE'
+export function trade(data) {
+    return {
+        type: 'TRADE',
+        data
+    }
+}
+
 export function cl(nowpage) {
     return {
         type: 'ADS',
@@ -821,24 +829,24 @@ export const returnupdate = (e) => {
     };
 };
 //统计数据
-export function Trade(data) {
-    return {
-        type: TRADE,
-        data
-    }
-}
+// export function Trade(data) {
+//     return {
+//         type: TRADE,
+//         data
+//     }
+// }
 
-//交易数据中间件
-export const Trades = () => {
-    return dispatch => {
-        axios.get("https://5b2f6ad6db0f5e001465b5e0.mockapi.io/trade").then(
-            response => {
-                dispatch(Trade(response.data))
-            }
-        )
+// //交易数据中间件
+// export const Trades = () => {
+//     return dispatch => {
+//         axios.get("https://5b2f6ad6db0f5e001465b5e0.mockapi.io/trade").then(
+//             response => {
+//                 dispatch(Trade(response.data))
+//             }
+//         )
 
-    };
-};
+//     };
+// };
 
 //请求用户信息
 export const shopper = (num) => {
@@ -867,3 +875,15 @@ export const shoppercount = (num) => {
 
 
 
+//查找交易记录
+export const gettrade= (num) => {
+    return dispatch => {
+        axios.get("http://127.0.0.1:88/api/jy?act=findkey&of=" + num).then(
+            response => {
+                console.log(response.data);
+                dispatch(trade(response.data))
+            }
+        )
+
+    };
+};

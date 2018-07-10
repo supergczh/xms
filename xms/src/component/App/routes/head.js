@@ -6,7 +6,8 @@ class Head extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            onf: false
+            onf: false,
+            title:''
         };
     }
 
@@ -18,9 +19,10 @@ class Head extends React.Component {
             cookie.remove('key', true);
             // history.push('/');
         // }, 400);
-        setTimeout(() => {
-            cookie.remove('key', true);;
-        }, 1000);
+        // setTimeout(() => {
+           
+        //     history.push('/');
+        // }, 1000);
     }
     over = () => {
         this.setState({ onf: false })
@@ -61,16 +63,29 @@ class Head extends React.Component {
     tool = (n) => {
         return n < 10 ? '0' + n : '' + n;
     }
-    render() {
-        let d = new Date();
-        let year = d.getFullYear();
-        let month = d.getMonth() + 1;
-        let day = d.getDate();
-        let h = d.getHours();
-        let m = d.getMinutes();
-        let s = d.getSeconds()
 
-        let title = this.tool(year) + '-' + this.tool(month) + '-' + this.tool(day) + ' ' + this.tool(h) + ':' + this.tool(m) + ':' + this.tool(s);
+    componentWillMount() {
+        var func = function () {
+            //获取当前时间
+            let d = new Date();
+            let year = d.getFullYear();
+            let month = d.getMonth() + 1;
+            let day = d.getDate();
+            let h = d.getHours();
+            let m = d.getMinutes();
+            let s = d.getSeconds()
+
+            let title = this.tool(year) + '-' + this.tool(month) + '-' + this.tool(day) + ' ' + this.tool(h) + ':' + this.tool(m) + ':' + this.tool(s);
+            this.setState({
+               title
+            })
+        }.bind(this)
+        func()
+        //每间隔1s执行一次func()方法
+        setInterval(func, 1000)
+    }
+    render() {
+       let {title}=this.state
 
         let use = cookie.load('key', true)
             let u=use.split('r')

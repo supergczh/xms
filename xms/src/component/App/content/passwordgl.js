@@ -50,7 +50,8 @@ class Passgl extends React.Component {
             of: true,
             level: '',
             onfs: true,
-            tishi: ''
+            tishi: '',
+            tis:''
         };
     }
 
@@ -88,7 +89,7 @@ class Passgl extends React.Component {
         console.log(i);
 
         this.setState({ ID: e.id, e: e, i: i })
-        this.refs.del.style.display = 'block'
+        this.refs.del.style.display = 'inline-block'
     }
     //弹窗确认删除
     delclick = () => {
@@ -278,7 +279,10 @@ class Passgl extends React.Component {
     fn = (ev) => {
         this.setState({ onfs: ev })
     }
-    
+    tisclick=()=>{
+        this.refs.use.style.borderColor = ''
+        this.refs.tis.style.display = 'none'
+    }
     //添加确认
     addsure = () => {
         let { nowpage, onOFF, vue1, vue2, username, password, phone, of } = this.state
@@ -297,6 +301,8 @@ class Passgl extends React.Component {
         if (a[0]) {
             console.log(1);
             that.refs.use.style.borderColor = 'red'
+            this.refs.tis.style.display = 'block'
+            this.setState({tis:'*登录名重复'})
             return
         } 
             let obj = {
@@ -335,14 +341,10 @@ class Passgl extends React.Component {
 
     addclick = () => {
         this.setState({
-            number: '',
-            Name: '',
-            Stock: '',
-            article: '',
-            checked: '',
-            id: "",
-            ids: '',
-            Price: ''
+            username: '',
+            password: '',
+            vue1: '',
+            phone: ''
         })
         this.refs.addtan.style.display = 'block'
     }
@@ -469,7 +471,7 @@ class Passgl extends React.Component {
         let { data, count } = this.props
 
         let { error, isLoaded, nowpage, pagecontent, onOff, search, v1, v2, vue1, vue2, onf, onf2,
-            username, password, phone, of, e, tishi
+            username, password, phone, of, e, tishi,tis
         } = this.state
         onOff = data.every(e => { return e.checked === true })
         if (data == 0) {
@@ -696,7 +698,9 @@ class Passgl extends React.Component {
                                     style={{ width: '150px' }}
                                     onChange={this.handleChange.bind(this)} name="username"
                                     value={username}
+                                    onClick={this.tisclick}
                                 />
+                                <div className='tis'><span ref='tis' >{tis}</span></div> 
                             </div>
                             <div className="input_info" style={{ paddingLeft: '150px' }}>
                                 <span> 登录密码:</span>
